@@ -116,5 +116,7 @@ function startServe(done) {
 	done();
 }
 
+// привет всем
+
 exports.develop = parallel(clean, compiletoSass, html, watchTask, startServe, image, getJS, toPug, webTaskJS);
 exports.production = parallel(clean, compiletoSass, html, image, getJS, toPug, webTaskJS);
