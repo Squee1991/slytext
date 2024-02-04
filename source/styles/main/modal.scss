@@ -1,0 +1,72 @@
+.modal-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+.modal__window {
+    position: absolute;
+    max-width: 422px;
+    min-height: 322px;
+    background-color: var(--white);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+}
+
+.modal__title {
+    padding: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.modal__content {
+    text-align: center;
+    width: 322px;
+    font-size: var(--Small);
+    margin: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.modal_text__message {
+    padding-bottom: 30px;
+}
+
+.phone-input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.country-code {
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.country-flag {
+    padding-right: 10px;
+}
+
+#phone {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}

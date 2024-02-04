@@ -1,0 +1,130 @@
+.connect-info {
+    display: flex;
+    margin-top: 70px;
+}
+
+.contacts__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 10px;
+}
+
+.fields {
+    display: flex;
+    border: 1px solid #DCDCDC;
+    border-radius: 4px;
+    height: 36px;
+    width: 328px;
+    padding-left: 12px;
+    color: #AFAFAF;
+}
+
+.form__wrapper {
+    width: 792px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.span-text:after {
+    content: "*";
+    color: red;
+}
+
+.span-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.wrapper__content {
+    max-width: 688px;
+    margin: 0 auto
+}
+
+.form__column {
+    padding: 15px;
+}
+
+.form__columns {
+    display: flex;
+}
+
+.form__title {
+    max-width: 688px;
+    margin: 0 auto;
+    padding: 40px 15px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+.fields {
+    margin: 0 0 32px 0;
+}
+
+.form__sub-text {
+    max-width: 688px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 32px 0;
+}
+
+.content-right {
+    max-width: 384px;
+    padding: 0 40px;
+}
+
+.right__number,
+.email__address {
+    padding: 10px;
+    color: #2974D3;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.contact_column {
+    padding-bottom: 40px;
+}
+
+.socialize__icons {
+    margin-left: 10px;
+    padding-top: 16px;
+}
+
+.form__btn-wrapper{
+    padding-bottom: 40px;
+}
+
+svg {
+    margin-right: 16px;
+}
+.text__area-wrapper {
+    width: 688px;
+}
+.text-area {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid #DCDCDC;
+    border-radius: 4px;
+    margin: 2px 0 20px 0;
+    resize: none;
+}
+
+.contacts__right-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 0 10px;
+}
+
+.form__sub-text-links {
+    color: var(--blue);
+}

@@ -1,0 +1,56 @@
+body {
+    font-family: var(--font-family);
+    font-style: normal;
+}
+.title {
+    color: var(--black);
+    font-size: var(--large);
+    padding: 10px;
+    font-weight: 700;
+}
+
+.form-title {
+    color: var(--white);
+    font-size: var(--large);
+    font-weight: bold;
+    padding: 10px;
+}
+
+.text {
+    line-height: var(--line-height);
+    color: var(--black);
+    padding: 10px;
+    font-size: var(--Small);
+    font-weight: var(--font-weight);
+}
+
+.text-content {
+    color: var(--white);
+    font-size: var(--Small);
+}
+
+.form-text {
+    padding: 10px;
+    color: var(--white);
+    font-size: var(--Small)
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.info-box {
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+.form-btn {
+    width: 100%;
+}
