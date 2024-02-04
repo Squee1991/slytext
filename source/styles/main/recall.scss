@@ -1,0 +1,39 @@
+.recall__image-item-1 {
+    display: none;
+}
+
+.recall__image {
+    padding: 10px;
+}
+
+.recall__image-item-1 {
+    display: none;
+}
+
+.recall__image-item {
+    object-fit: cover;
+}
+
+.recall__image {
+    padding: 10px;
+}
+
+@media (max-width: 767px) {
+    .column {
+        width: 100%;
+    }
+
+    .recall-wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+        background: #F2F8FF;
+    }
+
+    .recall__image-item-1 {
+        display: block;
+    }
+
+    .title {
+        font-size: 20px;
+    }
+}
