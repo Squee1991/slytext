@@ -36,8 +36,3 @@ result2()
 result2()
 
 
-
-
-fetch('https://jsonplaceholder.typicode.com/users/')
-	.then(userinfo => userinfo.json())
-	.then(json => console.log(json))

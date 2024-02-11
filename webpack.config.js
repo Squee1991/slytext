@@ -1,4 +1,5 @@
-let webpackMode = process.env.NODE_ENV ? 'develop' : 'production'
+let webpackMode = process.env.NODE_ENV ? 'develop' : 'production';
+
 module.exports = {
 	mode: webpackMode,
 	entry: {
