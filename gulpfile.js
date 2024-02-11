@@ -9,6 +9,7 @@ const browserSync = require('browser-sync').create();
 const sassGlob = require('gulp-sass-glob')
 const include = require('gulp-file-include')
 const pug = require('gulp-pug')
+const webpack = require('webpack')
 const webpackStream = require('webpack-stream')
 const webpackConfig = require('./webpack.config.js');
 
@@ -47,7 +48,7 @@ const PATHS = {
 
 function webTaskJS(done) {
 	src([PATHS.js.src])
-		.pipe(webpackStream(webpackConfig))
+		.pipe(webpackStream(webpackConfig , webpack))
 		.pipe(dest(PATHS.webpack.dest))
 	done()
 }
