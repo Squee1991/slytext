@@ -1,0 +1,96 @@
+.sing-in__content-left ,
+.sing-in__content-right {
+    width: 50%;
+}
+
+.sing-in_icon {
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sing-in__content-left {
+    background: linear-gradient(106.19deg, #0A4491 0%, #1A68CC 87.51%);
+}
+
+.sing-in__content-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sing-in__form {
+    width: 320px;
+    height: 308px;
+    margin: 0 auto;
+}
+
+.sing-in-content {
+    display: flex;
+    max-height: 780px;
+}
+
+.sing-in__title {
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.sing__in-email-title:after ,
+.sing__in-password-title:after {
+    content: "*";
+    color: red;
+}
+
+.sing__fields {
+    border: 1px solid #DCDCDC;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 3px 0;
+    width: 100%;
+}
+
+.sing__in-btn {
+    width: 100%;
+    margin: 24px 0 8px 0;
+}
+.sing_in_under_text {
+    display: flex;
+    justify-content: end;
+}
+.sing_in-forgot_link{
+    text-align: end;
+    color: var(--blue);
+    font-size: 10px;
+}
+
+.sing__ing-sub-content-title{
+    text-align: center;
+    color: var(--blue)!important;
+}
+
+.sing-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.sing__in-account {
+    padding-top: 10px;
+    display: flex;
+    font-size: 11px;
+    justify-content: center;
+}
+
+.account:last-child {
+    color: var(--blue);
+}
+
+.sing_acc {
+    padding: 10px 5px;
+}
+
+

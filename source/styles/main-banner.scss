@@ -1,0 +1,42 @@
+.btn-l-blue {
+  border: 1px solid var(--blue);
+  padding: var(--padding);
+  background: var(--blue);
+  font-size: var(--Verysmall);
+  border-radius: var(--border-radius);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.btn-l-white {
+  border: 1px solid var(--blue);
+  padding: var(--padding);
+  background: var(--white);
+  font-size: var(--Verysmall);
+  border-radius: var(--border-radius);
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.title {
+  color: var(--black);
+  font-size: var(--large);
+  font-weight: bold;
+}
+
+.text-content {
+  color: var(--white);
+  font-size: var(--Small);
+}
+
+.link__el {
+  font-size: var(--Medium);
+  color: var(--black);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1220px;
+  padding: 10px;
+}
+

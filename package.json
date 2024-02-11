@@ -1,0 +1,37 @@
+{
+  "name": "slytext-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "production": "gulp production",
+    "develop": "gulp develop"
+  },
+  "author": "Igor",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "eazy-logger": "^4.0.1",
+    "gulp": "^4.0.2",
+    "gulp-rename": "^2.0.0",
+    "pug": "^3.0.2",
+    "style-loader": "^3.3.3",
+    "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.29.3",
+    "delete": "^1.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-html2pug": "^5.1.1",
+    "gulp-image": "^6.3.1",
+    "gulp-minify": "^3.1.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-serve": "^1.4.0",
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5",
+    "webpack": "^5.90.0"
+  }
+}
