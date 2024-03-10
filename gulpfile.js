@@ -109,6 +109,7 @@ function watchTask(done) {
 	watch(PATHS.Pug.watch, toPug).on('change', browserSync.reload);
 	watch(PATHS.js.watch, getJS).on('change', browserSync.reload);
 	done()
+
 }
 
 function startServe(done) {
@@ -127,5 +128,6 @@ function startServe(done) {
 // привет всем
 
 
-exports.develop = parallel(clean, compiletoSass, html, image, getJS, toPug, webTaskJS, startServe, watchTask);
+exports.develop = parallel(clean, compiletoSass, html, image, getJS, toPug, webTaskJS,
+	watchTask, startServe);
 exports.production = parallel(clean, compiletoSass, html, image, getJS, toPug, webTaskJS);

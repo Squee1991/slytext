@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+ document.addEventListener('DOMContentLoaded', function () {
 	const circleElList = document.querySelectorAll('.circle-el');
 	circleElList.forEach(circleEl => {
 		circleEl.addEventListener('click', function () {
