@@ -1,0 +1,17 @@
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+.menu-logo{
+    text-align: center;
+    padding: 20px 10px;
+}
+.menu-item_main {
+    background-color: pink;
+}
+.nav-items{
+    text-align: center;
+    gap: 20px;
+}
