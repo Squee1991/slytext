@@ -46,10 +46,7 @@ const PATHS = {
 		src: 'source/pug/*.pug',
 		watch: 'source/pug/includes/*.pug',
 		dest: 'dist/'
-
 	},
-
-
 }
 
 function webTaskJS(done) {
@@ -103,15 +100,6 @@ function toPug(done) {
 	done()
 }
 
-
-function watchTask(done) {
-	watch(PATHS.style.watch, compiletoSass).on('change', browserSync.reload);
-	watch(PATHS.Pug.watch, toPug).on('change', browserSync.reload);
-	watch(PATHS.js.watch, getJS).on('change', browserSync.reload);
-	done()
-
-}
-
 function startServe(done) {
 	setTimeout(() => {
 		browserSync.init({
@@ -121,13 +109,20 @@ function startServe(done) {
 				open: false
 			}
 		});
-	}, 3000)
+	}, 2000)
+
 	done()
+}
+
+function watchTask(done) {
+	watch(PATHS.style.watch, compiletoSass).on('change', browserSync.reload);
+	watch(PATHS.Pug.watch, toPug).on('change', browserSync.reload);
+	watch(PATHS.js.watch, getJS).on('change', browserSync.reload)
+			done()
 }
 
 // привет всем
 
 
-exports.develop = parallel(clean, compiletoSass, html, image, getJS, toPug, webTaskJS,
-	watchTask, startServe);
+exports.develop = parallel(clean, compiletoSass, watchTask, html, image, getJS, toPug, webTaskJS, startServe);
 exports.production = parallel(clean, compiletoSass, html, image, getJS, toPug, webTaskJS);
