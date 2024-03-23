@@ -1,3 +1,90 @@
-extends layouts/blogLayout
+extends layouts/index
 block blog-columns
-    include includes/blogIncludes
+    .container
+        .header-content
+            .header__inner
+                .logo.js-logo
+                    a(href='Main.html' target="_self")
+                        img(src='../img/Logo.svg' alt='')
+                nav.menu
+                    ul.menu__list.js-menu__list
+                        - list = ["Features", "Pricing", "FAQ", "Blog", "Contacts"]
+                        each item in list
+                            li.menu__item
+                                a(
+                                    href=item.toLowerCase() + ".html",
+                                    target="_self",
+                                    class="js-menu__link-js menu__link link-el"
+                                )= item
+                .burger.js-burge
+                    each lineNum in [1, 2, 3]
+                        div(class=`line line-${lineNum}`)
+                .btn__wrapper.js-btn__wrapper
+                    a(href='SIngIn.html')
+                        button.header__btn.btn.form__btn.btn-white.js-btn-sing-in Sing in
+                    a(href='#')
+                        button.header__btn.btn.form__btn.btn-l-blue Create account
+        .blog-content-wrapper
+            .blog_columns
+                .blog__column
+                    .blog__column-content
+                        .blog__posted-title
+                            .blog__posted-title POSTED ON SEPTEMBER 27, 2022
+                            .blog__column-title How to Send Mass Text
+                            .blog__column_media
+                                img(src="../img/blog1.svg" alt="").blog__column_media_image
+                            .blog__column-text.text Whether you need to send a mass text message to showcase a sale for your customers or you want to broadcast a closing, SlyText can help you with this process and make it much more manageable. Sure, you can get on the computer and send a mass email, but there are many benefits to bulk text messages you will not receive through email. No matter why you need to send a bulk sms message, SlyText is the messaging app for you.
+
+
+                .blog__column
+                    .blog__column-content
+                        .blog__column-title Benefits of Mass Texts
+                        .blog__column_media
+                            img(src="../img/blog1.svg" alt="").blog__column_media_image
+                        .blog__column-text.text One of the most obvious benefits of sending out a mass group text to your customers is getting more customer feedback with this method. It is much easier to send a quick response through text to any polls that you may need to send out. Additionally, if you are texting from a local number, your customers will feel much more comfortable texting you back with any questions. Your customers can also text you back to confirm appointments, cancel, or even let you know if they will be late for an appointment. Only some people check their email, but it is hard to ignore a text message these days. Additionally, you will see an increase in the response rate from your customers. Using SlyText to communicate with your employees can be a great way to communicate anything they need to know. This could be reminders for tasks, events, or other important dates. These notifications help avoid confusion about the details and can lead to a smoother event for your company. These mass SMS messages can also inform your staff of upcoming deliveries or other important information they need.
+                .blog__column
+                    .blog__column-content
+                        .blog__column-title What Kind of Mass Texts Can You Send?
+                        .blog__column_media
+                            img(src="../img/blog1.svg" alt="").blog__column_media_image
+                        .blog__column-text.text There are three mass business texts: short-code, long-code, and toll-free. Short code texting is the text you receive from companies about flight updates, reminders, or shipping notices. Though this is obviously a great option for sending SMS marketing messages, it can be a costly SMS service. The other mass text you can send out to your customers is long code text. These come with a 10-digit number, which will help your customers feel more comfortable responding to or opening any links you send them. One downside to this method is that many carriers restrict these numbers, meaning you may be limited to 100 people from your contact list in a group. Toll-free texting is an excellent option for sending a mass text from a toll-free number. This method's benefits are two-way conversations, high delivery rates, and no opt-in requirements.
+
+                .blog__column
+                    .blog__column-content
+                        .blog__column-title    How to Send a Mass Text Using SlyTex
+                    .blog__column-text.text 1. Decide which pricing option you want and create your SlyText account. 2. Log in to your new SlyText account and choose which phone number you will be using. This will be the number that your customers will receive all mass communications. 3. Enter the mobile numbers of everyone you want to receive your group text messages. SlyText limits how many messages can be sent out at one time. The daily limit is 1,000 texts a day, and they can only be sent out at a rate of 14 messages per minute. 4. Next, you will see a scheduling option for your texting campaign. You will either be able to send your message immediately, or you can schedule to have it sent later. 5. Click send! You will then be able to check the interface to ensure that your messages have been sent. You will also see scheduled texts in the &quot;Scheduled
+                .blog__column
+                    .blog__column-content
+                        .blog__column-title Additional Features of SlyTex
+                    .blog__column-text.text SlyText allows you the option of enabling notifications on the web browser. This will allow you to receive notifications of any new or unread messages. SlyText also offers the option of SMS forwarding. This means that any incoming messages will be forwarded to the phone number that you put on file. Remember that, though low-cost, SMS forwarding will incur an extra charge on your account. Additionally, on your account, you can check the success of any current online texting campaigns. You will see real-time reports pertaining to your campaigns, and you will even have the option to get reports delivered to you about your text marketing campaigns.
+                .blog__column
+                    .blog__column-content
+                        .blog__column-title How to Send a Mass Text Using SlyText
+                    .blog__column-text.text In conclusion, text scams are a genuine problem that you must be on the lookout for. There are plenty of scammers out there that are looking to exploit any personal information they can get their hands on. It is important to be familiar with all the warning signs of a smishing scam. Luckily, there are several steps that you can take to ensure that your business texts appear more legitimate to your customers. Make sure to include your name and your business name, as well as ensure that there is a legitimate reason for your text. slyText is here to help you with all of your web texting needs. With slyText, your business will be up and running even better than before!
+                .blog__column
+                    .blog__column-content
+                        .blog__column-title    Pricing
+                        .blog__column-text.text In conclusion, text scams are a genuine problem that you must be on the lookout for. There are plenty of scammers out there that are looking to exploit any personal information they can get their hands on. It is important to be familiar with all the warning signs of a smishing scam. Luckily, there are several steps that you can take to ensure that your business texts appear more legitimate to your customers. Make sure to include your name and your business name, as well as ensure that there is a legitimate reason for your text. slyText is here to help you with all of your web texting needs. With slyText, your business will be up and running even better than before!
+
+                .blog__column
+                    .blog__column-content
+                        .blog__column-title Summary
+                        .blog__column_media
+                            img(
+                                src="../img/blog1.svg" alt=""
+                            ).blog__column_media_image
+                        .blog__column-text.text With SlyText, you can send out texting campaigns to your customers with a mouse click. You will get tons of benefits and an excellent customer experience, and you will not have to break the bank doing it.
+
+                .blog__column
+                    .blog__column-content
+                        .blog__column-title Similar Posts
+                        .blog__column-text-links
+                            -texts = ['MMS vs. SMS', 'Realtor Texting', 'Church Texting Service', 'Text Messaging Service for Busines']
+                            each text in texts
+                                .blog__column-text-wrapper
+                                    a(href=""
+                                    ).blog__column-text-link=text
+
+
+
+
