@@ -7,12 +7,7 @@ $singInBtn.addEventListener('click', function (event) {
 
 const $inputEmail = document.querySelector('sing_input_email')
 const $inputPassword = document.querySelector('sing_input_password')
-const $btn = document.querySelector('sing__in-btn')
-
-
-$btn.addEventListener('submit' , function (event) {
-    event.preventDefault()
-})
+const $form = document.querySelector('sing__in-btn')
 
 
 function emailFoo() {

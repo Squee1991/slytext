@@ -44,7 +44,7 @@ const PATHS = {
 
 	Pug: {
 		src: 'source/pug/*.pug',
-		watch: 'source/pug/includes/*.pug',
+		watch: 'source/pug/*.pug',
 		dest: 'dist/'
 	},
 }

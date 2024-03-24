@@ -1,7 +1,8 @@
 body {
     font-family: var(--font-family);
-    font-style: normal;
+        font-style: normal;
 }
+
 .title {
     color: var(--black);
     font-size: var(--large);
@@ -41,7 +42,6 @@ body {
     padding: 10px;
 }
 
-
 .info-box {
     max-width: var(--max-width);
     display: flex;
@@ -49,7 +49,6 @@ body {
     flex-direction: column;
     padding: 10px;
 }
-
 
 .form-btn {
     width: 100%;

@@ -1,0 +1,98 @@
+extends layouts/index
+block privacy-content
+	.container
+		.header-content
+			.header__inner
+				.logo.js-logo
+					a(href='Main.html' target="_self" )
+						img(src='../img/Logo.svg' alt='')
+				nav.menu
+					ul.menu__list.js-menu__list
+						- list = ["Features", "Pricing", "FAQ", "Blog", "Contacts"]
+						each item in list
+							li.menu__item
+								a(
+									href=item.toLowerCase() + ".html",
+									target="blank",
+									class="js-menu__link-js menu__link link-el"
+								)= item
+				.burger.js-burge
+					each lineNum in [1, 2, 3]
+						div(class=`line line-${lineNum}`)
+				.btn__wrapper.js-btn__wrapper
+					a(href='SIngIn.html')
+						button.header__btn.btn.form__btn.btn-white.js-btn-sing-in Sing in
+					a(href='#')
+						button.header__btn.btn.form__btn.btn-l-blue Create account
+		.privacy-content
+			.privaty__title
+				.privacy__title-el.title Privacy Policy
+			.privacy_columns
+				.privacy_column
+					.privacy__column-content
+						.privacy__column-title Your Privacy Is Important To Us
+					p.privacy__column_text.text MobileSphere respects your privacy and the privacy of your telephone number data. Your name, telephone number and email address, and the telephone numbers you have sent messages to, are stored and maintained by us in a secure and encrypted manner. MobileSphere has put in place physical, electronic, and managerial procedures to safeguard and help prevent unauthorized access, maintain data security, and correctly use the information we collect online. All information submitted is protected by our secure server, which automatically encrypts your personally identifiable information so that it cannot be read while traveling over the Internet.
+				.privacy_column
+					.privacy__column-content
+						.privacy__column-title We Do Not Market Or Sell Your Information
+					p.privacy__column_text.text MobileSphere does not sell or market contact information about our customers. In other words, we will not sell or market to any third-party your name, phone number, email address or contact information. MobileSphere also does not use internally, nor does it sell or market, our customers’ phone numbers. We will not use, sell or market to any third-party the telephone numbers in your lists or numbers you have sent messages to. MobileSphere may contact you when you initially use our service, and may periodically contact you as a courtesy to ensure your experience is as good as it can be and to provide you with service updates. We will provide an opt-out method if you choose to stop receiving updates.
+
+
+				.privacy_column
+					.privacy__column-content
+						.privacy__column-title Payment Processing
+					p.privacy__column_text.text In order to process your payments, MobileSphere may provide your billing information to our third-party payment processing vendors such as PayPal, Stripe, and other electronic payment processing gateways such as credit card companie
+				.privacy_column
+					.privacy__column-content
+						.privacy__column-title Use of Cookies
+					p.privacy__column_text.text To enhance your experience with our website, we use "cookies." Cookies are used by your computer's browser to store your preferences. Cookies, by themselves, do not tell us your email address or other personally identifiable information unless you choose to provide this information to us.
+				.privacy_column
+					.privacy__column-content
+						.privacy__column-title Share slyText
+					p.privacy__column_text.text If a user decides to use our referral tools to inform a friend about our website, service, or a special promotion, MobileSphere requests you provide the friend's phone number or email address to send out this specific information. MobileSphere does not reuse this information to market to the friend/recipient. Attachments are strictly forbidden and you expressly agree not to add any attachment to any correspondence send via the MobileSphere website. You also agree that you will not use these tools for any other purpose but to share this MobileSphere service with others.
+				.privacy__column
+					.privacy__column-content
+						.privacy__column-title Legal Process/Disclaimer
+					p.privacy__column_text.text MobileSphere may disclose personally identifiable information or data in response to legal processes, subpoenas, or requests from law enforcement.
+				.privacy__column
+					.privacy__column-content
+						.privacy__column-title Notification Of Changes
+					p.privacy__column_text.text MobileSphere reserves the right to modify the provisions of this Privacy Statement if necessary. You agree that your continued use of the MobileSphere service shall constitute your acceptance of the Privacy Policy as may be amended from time to time.
+				.privacy__column
+					.privacy__column-content
+						.privacy__column_title Contact Us
+					p.privacy__column_text.text
+						| If you have any questions regarding this statement, or would like more information on our privacy practices or our slyText
+						a(href="") online texting service,
+						| please contact us at
+						a(href="") support@slytext.com.
+						| Your security and the security of your data, is of paramount importance to us
+	footer.footer
+		section.section-footer
+			.container
+				.footer-content
+					.logo-wrapper.f-block
+						img(src="../img/Logo-f.svg",  alt="" , class="logo__el")
+					nav.footer-menu
+						ul.footer__left-list.f-list
+							-leftlist = ['Features', 'Pricing', 'Blog', 'Contacts']
+							each item in leftlist
+								li.footer_left-list.f-list
+									a(class="footer__left-link.f-link-el.js__footer-links", href=item.toLowerCase() + ".html" )=item
+					ul.footer__right-list.nav-r-block
+						// Цикл меню
+						- rightlist = ['FAQ', 'Terms of Use', 'Privacy Policy']
+						each item in rightlist
+							li.footer__right-list.f-list
+								a(class="footer__footer__right-link.f-link-el.js__footer-links", href=item.toLowerCase() + ".html")=item
+					.footer_contacts-block.c-block
+						.contacts-title Get in Touch!
+						.footer__support-post
+							a(class="footer__support-address", href="https://slytext.com/faq/") support@slytext.com
+						.footer__sup-number    +1 (617) 399-9980
+						.footer__icons-block
+							img.footer__icon_fb(src='../img/facebook.svg' alt='')
+							img.footer__icon_fb(src='../img/tw.svg' alt='')
+							img.footer__icon_fb(src='../img/insta.svg' alt='')
+							img.footer__icon_fb(src='../img/youtube.svg' alt='')
+		.agreement © 2022 MobileSphere, LLC.

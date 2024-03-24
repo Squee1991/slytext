@@ -10,13 +10,13 @@ block footer
 							-leftlist = ['Features', 'Pricing', 'Blog', 'Contacts']
 							each item in leftlist
 								li.footer_left-list.f-list
-									a(class="footer__left-link.f-link-el", href="")=item
+									a(class="footer__left-link.f-link-el.js__footer-links", href=item.toLowerCase() + ".html" )=item
 					ul.footer__right-list.nav-r-block
 						// Цикл меню
 						- rightlist = ['FAQ', 'Terms of Use', 'Privacy Policy']
 						each item in rightlist
 							li.footer__right-list.f-list
-								a(class="footer__footer__right-link.f-link-el", href="")=item
+								a(class="footer__footer__right-link.f-link-el.js__footer-links", href=item.toLowerCase() + ".html")=item
 					.footer_contacts-block.c-block
 						.contacts-title Get in Touch!
 						.footer__support-post

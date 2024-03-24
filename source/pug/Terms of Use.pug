@@ -1,9 +1,32 @@
 extends layouts/index
 block terms-block
 	.container
+		.header-content
+			.header__inner
+				.logo.js-logo
+					a(href='Main.html' target="_self" )
+						img(src='../img/Logo.svg' alt='')
+				nav.menu
+					ul.menu__list.js-menu__list
+						- list = ["Features", "Pricing", "FAQ", "Blog", "Contacts"]
+						each item in list
+							li.menu__item
+								a(
+									href=item.toLowerCase() + ".html",
+									target="blank",
+									class="js-menu__link-js menu__link link-el"
+								)= item
+				.burger.js-burge
+					each lineNum in [1, 2, 3]
+						div(class=`line line-${lineNum}`)
+				.btn__wrapper.js-btn__wrapper
+					a(href='SIngIn.html')
+						button.header__btn.btn.form__btn.btn-white.js-btn-sing-in Sing in
+					a(href='#')
+						button.header__btn.btn.form__btn.btn-l-blue Create account
 		.terms-content
 			.terms__title
-				.erms__title-el.title Terms of Use
+				.terms__title-el.title Terms of Use
 
 			.terms_columns
 				.terms__column
@@ -35,8 +58,8 @@ block terms-block
 				.terms__column
 					.term__column-content
 						.terms__column-title 6. Disclaimer Regarding Accuracy of Vendor Information
-						p.terms__column_textterms__column_text-first.text Product specifications and other information have either been provided by the Vendors or collected from publicly available sources. While MobileSphere makes every effort to ensure that the information on this website is accurate, we can make no representations or warranties as to the accuracy or reliability of any information provided on this website.
-						p.terms__column_text terms__column_text-second.text MobileSphere makes no warranties or representations whatsoever with regard to any product provided or offered by any Vendor, and you acknowledge that any reliance on representations and warranties provided by any Vendor shall be at your own risk
+						p.terms__column_text.terms__column_text-first.text Product specifications and other information have either been provided by the Vendors or collected from publicly available sources. While MobileSphere makes every effort to ensure that the information on this website is accurate, we can make no representations or warranties as to the accuracy or reliability of any information provided on this website.
+						p.terms__column_text.terms__column_text-second.text MobileSphere makes no warranties or representations whatsoever with regard to any product provided or offered by any Vendor, and you acknowledge that any reliance on representations and warranties provided by any Vendor shall be at your own risk
 						p.
 				.terms__column
 					.term__column-content
@@ -80,6 +103,35 @@ block terms-block
 							a(href='#') support@slytext.com.
 							|  or email us at
 							a(href='#') support@slytext.com.
+	footer.footer
+		section.section-footer
+			.container
+				.footer-content
+					.logo-wrapper.f-block
+						img(src="../img/Logo-f.svg",  alt="" , class="logo__el")
+					nav.footer-menu
+						ul.footer__left-list.f-list
+							-leftlist = ['Features', 'Pricing', 'Blog', 'Contacts']
+							each item in leftlist
+								li.footer_left-list.f-list
+									a(class="footer__left-link.f-link-el.js__footer-links", href=item.toLowerCase() + ".html" )=item
+					ul.footer__right-list.nav-r-block
+						// Цикл меню
+						- rightlist = ['FAQ', 'Terms of Use', 'Privacy Policy']
+						each item in rightlist
+							li.footer__right-list.f-list
+								a(class="footer__footer__right-link.f-link-el.js__footer-links", href=item.toLowerCase() + ".html")=item
+					.footer_contacts-block.c-block
+						.contacts-title Get in Touch!
+						.footer__support-post
+							a(class="footer__support-address", href="https://slytext.com/faq/") support@slytext.com
+						.footer__sup-number    +1 (617) 399-9980
+						.footer__icons-block
+							img.footer__icon_fb(src='../img/facebook.svg' alt='')
+							img.footer__icon_fb(src='../img/tw.svg' alt='')
+							img.footer__icon_fb(src='../img/insta.svg' alt='')
+							img.footer__icon_fb(src='../img/youtube.svg' alt='')
+		.agreement © 2022 MobileSphere, LLC.
 
 
 
