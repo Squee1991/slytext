@@ -35,20 +35,6 @@ document.addEventListener('DOMContentLoaded', function () {
 			hideColumns(event);
 		});
 	});
-
-	function menuEvents() {
-		const $links = document.querySelectorAll('.js-menu__link-js')
-		$links.forEach(itemlink => {
-			itemlink.addEventListener('click', function (event) {
-				event.preventDefault()
-				location.href = itemlink.getAttribute('href')
-			})
-		})
-
-	}
-
-	menuEvents()
-
 });
 
 

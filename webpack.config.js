@@ -6,8 +6,8 @@ module.exports = {
 		main: './source/js/main.js',
 		faq: './source/js/faq.js',
 		scroll: './source/js/scroll.js',
-		singIN:'./source/js/sing-in.js',
-		footerNavList: './source/js/footer_nav.js'
+		navPaths:'./source/js/navigation-paths.js',
+
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist/webpack'),
