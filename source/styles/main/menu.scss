@@ -1,17 +1,15 @@
 .menu__list {
     display: flex;
     font-weight: 700;
-    padding: 18px;
     margin-right: 100px;
 }
 
 .link-el {
-    font-size: var(--Medium);
-    color: var(--black);
-    padding: 10px 15px;
+    padding: 10px 10px;
     font-weight: bold;
     transition: .5s;
 }
+
 
 @media (max-width: 1023px) {
     .menu__list {
@@ -35,9 +33,9 @@
         background: var(--white);
     }
 
-    .menu__item .link-el {
-        display: inline-block;
-    }
+    //.menu__item .link-el {
+    //    display: inline-block;
+    //}
 
     .menu__link {
         border-bottom: 1px solid #DCDCDC;

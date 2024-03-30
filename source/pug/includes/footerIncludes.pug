@@ -10,7 +10,7 @@ block footer
 							-leftlist = ['Features', 'Pricing', 'Blog', 'Contacts']
 							each item in leftlist
 								li.footer_left-list.f-list
-									a(class="footer__left-link.f-link-el.js__footer-links", href=item.toLowerCase() + ".html" )=item
+									a(class="footer__left-link.f-link-el.js-auth-btns", href=item.toLowerCase() + ".html" )=item
 					ul.footer__right-list.nav-r-block
 						// Цикл меню
 						- rightlist = ['FAQ', 'Terms of Use', 'Privacy Policy']

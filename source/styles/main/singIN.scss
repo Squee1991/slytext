@@ -14,11 +14,18 @@
 	background: linear-gradient(106.19deg, #0A4491 0%, #1A68CC 87.51%);
 	border-bottom-left-radius: 30px;
 	border-top-right-radius: 30px;
+	padding: 25px 0;
 }
 
 .sing-in__content-right {
 	display: flex;
 	justify-content: center;
+}
+
+.right {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .sing-in__form {
@@ -35,14 +42,15 @@
 	color: black;
 	font-size: 26px;
 	font-weight: bold;
-	padding: 10px 0;
+	padding: 0 0 10px 0;
+
 }
 
-.sing__in-email-title:after,
-.sing__in-password-title:after,
 .sing__in-phone-title:after {
 	content: "*";
 	color: red;
+	position: absolute;
+
 }
 
 .sing__fields {
@@ -100,10 +108,15 @@
 .sing_input_data-card_fields {
 	display: flex;
 	justify-content: space-between;
+
 }
 
 .sing__in-password-title {
-	max-width: 152px;
+ max-width: 152px;
+}
+
+.sing__in-name-title.sing-text {
+
 }
 
 .sing__in-select-sub-text.sing-text {
@@ -130,12 +143,12 @@
 	content: '';
 	position: absolute;
 	display: block;
-	width: 10px;
-	height: 10px;
+	width: 8px;
+	height: 8px;
 	top: 50%;
 	left: 50%;
 	border-radius: 50%;
-	transform: translate(-50% , -50%);
+	transform: translate(-50%, -50%);
 	background-color: var(--Darkgrey);
 	opacity: 0;
 	transition: .2s;
@@ -147,8 +160,4 @@
 
 .checkbox-text.sing-text {
 	padding-left: 5px;
-}
-
-.checkbox-text {
-	font-size: 10px;
 }
