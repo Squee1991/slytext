@@ -16,20 +16,21 @@ class Paths {
 		this.btn = document.querySelectorAll(DomElement)
 		this.Event()
 	}
-
 	Event() {
 		this.btn.forEach(item => {
-			item.addEventListener('click', this.ClickBtn(PathsBtns))
+			item.addEventListener('click' , this.ClickBtn(PathsBtns))
 			location.href = item.getAttribute('href')
+
 		})
 	}
-
 	ClickBtn(event) {
 		event.preventDefault()
 	}
-}
 
+}
 let PathsBtns = new Paths('js-auth-btns')
+
+
 
 
 function emailFoo() {
@@ -40,6 +41,8 @@ function emailFoo() {
 function passwordFoo() {
 
 }
+
+
 
 
 
