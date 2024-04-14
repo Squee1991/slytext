@@ -1,27 +1,37 @@
-document.addEventListener('DOMContentLoaded', function () {
-	function scrolling() {
-		const $scrolling = document.querySelector('.js-scroll__top');
-		if ($scrolling) {
-			if (window.pageYOffset > 2000 && window.innerWidth > 768) {
-				if (!$scrolling.classList.contains('scrollUp')) {
-					$scrolling.classList.add('scrollUp');
-					$scrolling.addEventListener('click', clickHand);
-				}
-			} else {
-				$scrolling.classList.remove('scrollUp');
-				$scrolling.removeEventListener('click', clickHand);
+class Scroll {
+	constructor(node) {
+		this.node = node;
+		this.node = document.querySelector('.js-scroll__top');
+		this.clickHand = this.clickHand.bind(this);
+		this.scrolling = this.scrolling.bind(this);
+		this.init();
+	}
+	scrolling() {
+		if (window.pageYOffset > 2000 && window.innerWidth > 768) {
+			if (!this.node.classList.contains('scrollUp')) {
+				this.node.classList.add('scrollUp');
+				this.node.addEventListener('click', this.clickHand);
 			}
-		}
-
-		function clickHand() {
-			window.scrollTo({
-				top: 0,
-				behavior: 'smooth'
-			});
-			$scrolling.classList.remove('scrollUp');
+		} else {
+			this.node.classList.remove('scrollUp');
+			this.node.removeEventListener('click', this.clickHand);
 		}
 	}
+	clickHand() {
+		window.scrollTo({
+			top: 0,
+			behavior: 'smooth'
+		});
+		this.node.classList.remove('scrollUp');
+	}
 
-	window.addEventListener('scroll', scrolling);
-})
+	init() {
+		document.addEventListener('scroll', this.scrolling);
+	}
+}
+document.addEventListener('DOMContentLoaded', function () {
+	const scrolling = new Scroll();
+});
+
+
 
